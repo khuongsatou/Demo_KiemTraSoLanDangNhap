@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtusername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        >
+
+    </EditText>
+    <EditText
+        android:layout_below="@+id/edtusername"
+        android:id="@+id/edtpassword"
+        android:password="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="PassWord"
+        >
+
+    </EditText>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/edtpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"></Button>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_below="@+id/edtpassword"
+        android:layout_toRightOf="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"></Button>
+
+    <TextView
+        android:id="@+id/txtAlert"
+        android:layout_below="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        android:text="" />
+
+</RelativeLayout>
